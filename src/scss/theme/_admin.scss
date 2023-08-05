@@ -1,0 +1,51 @@
+@use './../utilities/variables' as variable;
+
+@font-face {
+  font-family:  Asap;
+  src: url('../../assets/fonts/Asap/Asap-VariableFont_wdth\,wght.ttf') format("openType");
+}
+@font-face {
+  font-family: Signika;
+  src: url('../../assets/fonts/Signika/Signika-VariableFont_GRAD\,wght.ttf')format("openType");
+}
+
+
+h1{
+  font-family:  Asap,sans-serif;
+}
+
+label.form-label{
+  color:  variable.$white; 
+  font-family:  Signika,sans-serif;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+input.form-control{
+  font-family:  Signika,sans-serif;
+  font-weight: normal;
+  padding: 10px;
+  border:1px solid #555564;
+  font-size: 16px;
+  color:variable.$white;
+}
+input.form-control:focus{
+  box-shadow: 0 0 0 0.25rem rgb(45 32 75);
+  border-color: #af86fe;
+}
+
+input.form-control::placeholder{
+  font-weight: 300;
+}
+
+.ng-invalid:not(form).ng-touched{
+  border-color: variable.$danger;
+}
+.ng-valid  {
+  border-color: variable.$success !important;
+}
+
+.btn{
+  font-weight: 600;
+  font-family:  Asap,sans-serif;
+}
